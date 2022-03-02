@@ -13,14 +13,17 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
   },
   "dependencies": {
-    "gatsby": "^4.8.2",
+    "gatsby": "^4.9.0",
+    "jest": "^27.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
