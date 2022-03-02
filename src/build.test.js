@@ -5,10 +5,9 @@ jest.setTimeout(60_000)
 describe("the cli", () => {
     it("builds", async () => {
         try {
-            const { stdout }= await exec('gatsby build')
+            const { stdout } = await exec('gatsby build', { maxBuffer: 1024 * 1024 * 10 });
             expect(stdout).toBeDefined()
         } catch (error) {
-            // @ts-ignore
             console.log(error.stdout)
             expect(error).toBeUndefined()
         }
